@@ -10,12 +10,12 @@ You must have the following:
 
 - An Azure account
 - Access to Azure portal (portal.azure.com)
-- Rights to create an Azure Postgresql database resource.
 - You need to create a User in AAD (like 'user1')
 - You need to be able to create Groups in AAD, and make your user a member of those groups as needed.  Make sure one of the groups is 'camunda-admin', as this is a default admin group in Camunda.
 - You must be able to create an "App Registration" for your app (like 'spring-security-web-app')
+- Azure Portal (portal.azure.com) via Azure Active Directory -> Enterprise applications -> User settings -> Admin consent request / Users can request admin consent to apps they are unable to consent to​ / choose "YES"
 - In that App Registration, you need to be able to generate a secret in the 'Certificates & Secrets' section
-- In the Authentication section, you need to provide a Redirect URI.  It should be something like http://localhost:8080/login/oauth2/code/azure (when running this example locally)
+- In the Authentication section, you need to provide a Redirect URI.  It should be something like http://localhost:8080/login/oauth2/code/azure (when running this example locally) / Enable "Implicit grant and hybrid flows" by turning on Access tokens, ID tokens
 - under 'API Permissions', add permissions for the Default Directory of:
 	- User.Read
 	- Directory.AccessAsUser.All

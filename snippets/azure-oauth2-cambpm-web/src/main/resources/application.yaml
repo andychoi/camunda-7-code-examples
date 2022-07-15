@@ -42,8 +42,8 @@ server:
 #  azure.activedirectory.active-directory-groups=Users
 azure:
   activedirectory:
-    tenant-id: aaaaaaaa-YOUR-TENANT-ID-HERE-zzzzzzzzzzzz
-    active-directory-groups: your-azure-group-1, your-azure-group-2
+    tenant-id: 
+    active-directory-groups: camunda-admin
 
 spring:
   h2:
@@ -63,6 +63,6 @@ spring:
       client:
         registration:
           azure:
-            client-id: aaaaaaaa-YOUR-CLIENT-ID-HERE-zzzzzzzzzzzz
-            client-secret: aaaaaaaa-YOUR-CLIENT-SECRET-HERE-zzzzzzzzzzzz
+            client-id: 
+            client-secret: 
             redirect-uri: http://localhost:8080/login/oauth2/code/azure
